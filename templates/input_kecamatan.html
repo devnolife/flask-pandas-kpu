@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Kecamatan</title>
+</head>
+<body>
+    <h1>Pilih Kecamatan</h1>
+    <form method="POST">
+        <select name="kecamatan">
+            {% for kecamatan in kecamatan_list %}
+            <option value="{{ kecamatan }}">{{ kecamatan }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Next">
+    </form>
+</body>
+</html>

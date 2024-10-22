@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Kelurahan</title>
+</head>
+<body>
+    <h1>Pilih Kelurahan</h1>
+    <form method="POST">
+        <select name="kelurahan">
+            {% for kelurahan in kelurahan_list %}
+            <option value="{{ kelurahan }}">{{ kelurahan }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Next">
+    </form>
+</body>
+</html>
